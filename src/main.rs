@@ -4,11 +4,11 @@ mod day1;
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
 struct Args {
-    /// Name of the person to greet
+    /// Which day to run
     #[arg(short, long, default_value_t = 1)]
     day: u8,
 
-    /// Number of times to greet
+    /// File name of input
     #[arg(short, long, default_value_t = String::from("input.txt"))]
     input: String,
 }
