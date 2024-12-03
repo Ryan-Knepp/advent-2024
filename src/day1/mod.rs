@@ -1,6 +1,7 @@
 use std::fs;
 use std::path::Path;
 
+// https://adventofcode.com/2024/day/1
 pub fn run(input: &str) {
     let input_path = Path::new("src").join("day1").join(&input);
     let file_input = fs::read_to_string(input_path).expect("Couldn't read file");
